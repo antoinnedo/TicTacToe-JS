@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tic-Tac-Toe ✨</h1>
+  </header>
+  
+  <main>
+    <div class="controls">
+      <div class="player-input">
+        <label for="player1-name">Player 1 (X):</label>
+        <input type="text" id="player1-name" placeholder="Enter name">
+      </div>
+      <div class="player-input">
+        <label for="player2-name">Player 2 (O):</label>
+        <input type="text" id="player2-name" placeholder="Enter name">
+      </div>
+      <button id="restart-btn">Start / Restart Game</button>
+    </div>
+
+      <div id="message-display" class="message">
+          Enter player names and click Start!
+      </div>
+
+      <div id="gameboard">
+      </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

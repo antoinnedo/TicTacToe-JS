@@ -1,0 +1,127 @@
+/* General Body and Layout Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  margin: 20px 0;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Controls for player names and restart button */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.player-input {
+  display: flex;
+  flex-direction: column;
+}
+
+#restart-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#restart-btn:hover {
+  background-color: #45a049;
+}
+
+/* Message Display Area */
+.message {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e3e3e3;
+  min-height: 25px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+/* Gemini API Feature Button */
+#trash-talk-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#trash-talk-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+#trash-talk-btn.hidden {
+  display: none;
+}
+
+/* Gameboard Styling */
+#gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  background-color: #333;
+  border: 5px solid #333;
+  border-radius: 5px;
+}
+
+.cell {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #e9e9e9;
+}
+
+/* Styling for X and O markers */
+.cell.x {
+  color: #3498db; /* Blue for X */
+}
+
+.cell.o {
+  color: #e74c3c; /* Red for O */
+}
