@@ -1,6 +1,7 @@
 # Tic Tac Toe
 
 ## Welcome to my version of Tic Tac Toe, made from pure Vanilla JavaScript.
+## <a href="https://antoinnedo.github.io/TicTacToe-JS/">Try it out!</a>
 
 ### Tic Tac Toe functionalities:
 - Choose player name.
